@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+:root {
+    --ff-1 : 'Poppins', sans-serif;
+    --ff-2 : 'PT Serif', serif;
+  
+    --clr-black : #000;
+};
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+.contenedor{
+    margin:6%;
+    margin-right: 0;
+}
+
+h1{
+    font-family: var(--ff-2);
+    font-weight: 700;
+    font-size: 36px;
+    margin: 40px 0;
+}
+
+h2{
+    font-family: var(--ff-1);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.miembros h3{
+    font-family: var(--ff-1);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#parrafo-principal{
+    font-family: var(--ff-1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contenedor-miembros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+#miembro2, #miembro4, #miembro6{
+    margin-top: 33px;
+}
+
+.foto{
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: rgba(79, 79, 79, 0.396) 4px 4px 8px 2px;
+}
+
+.foto:hover{
+    cursor: pointer;
+    width: 88%;
+}
+
+.miembros .puesto{
+    font-family: var(--ff-2);
+    font-weight: 400;
+    font-size: 10px;
+    padding: 0;
+    writing-mode: vertical-lr;
+    display: inline-block;
+    position: absolute;
+    margin-bottom: -20px;
+}
+
+.footer{
+    font-family: var(--ff-1);
+    font-weight: 400;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.432);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column: 1/-1;
+    text-align: center;
+    margin-top: 30px;
+}
+
+span{
+    color: rgba(0, 0, 0, 0.515);
+    font-weight: 600 ;
+}
+
+
+/* ---------PANTALLA 980 PX--------- */
+@media(min-width: 1200px){
+    .textos{
+        display: flex;
+    }
+
+    .who-we-are{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 30%;
+    }
+
+    h1{
+        font-family: var(--ff-2);
+        font-weight: 700;
+        font-size: 36px;
+    }
+    
+    h2{
+        font-family: var(--ff-1);
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    #parrafo-principal{
+        font-family: var(--ff-1);
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    .miembros h3{
+        font-family: var(--ff-1);
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .miembros .puesto{
+        font-family: var(--ff-2);
+        font-weight: 400;
+        font-size: 12px;
+        padding: 0;
+        writing-mode: vertical-lr;
+        display: inline-block;
+        position: absolute;
+    }
+
+    .contenedor-miembros{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #miembro2, #miembro5{
+        margin-top: 150px;
+    }
+
+    .footer{
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.432);
+        margin-top: 130px;
+        margin-bottom: -40px;
+        align-items: flex-end;
+    }
+}
